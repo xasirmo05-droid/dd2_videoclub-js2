@@ -18,20 +18,20 @@ modo.addEventListener('click', () =>{
   ];
 
   pelis.forEach(peli=> {
-  peli.addEventListener('click', function () {
-    valor = peli.dataset.valor;
-    rutaVideo = ruta[valor];
-    if (valorActual === valor){
-      video.innerHTML = "";
-      valorActual = null;
-    }else{
-      valorActual = valor;
-      video.innerHTML = `
-          <video controls autoplay>
-            <source src="${rutaVideo}" type="video/mp4">
-            Tu navegador no soporta video.
-          </video>
-          `;
-    }
-  });
+    peli.addEventListener('click', function () {
+      valor = peli.dataset.valor;
+      rutaVideo = ruta[valor];
+      if (valorActual === valor){
+        video.innerHTML = "";
+        valorActual = null;
+      }else{
+        valorActual = valor;
+        video.innerHTML = `
+            <video controls autoplay>
+              <source src="${rutaVideo}" type="video/mp4">
+              Tu navegador no soporta video.
+            </video>
+            `;
+      }
+    });
 });

@@ -48,7 +48,8 @@ video {
 #modo {
     width: 25px;
     height: 25px;
-    margin: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
     float: left;
     background-image: var(--imageBackground);
     background-size: contain;
