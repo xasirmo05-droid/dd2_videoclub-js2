@@ -22,10 +22,11 @@ let ruta = [
   "assets/video5.mp4"
 ];
 
-pelis.forEach(peli=> () {
+pelis.forEach(peli=> {
   peli.addEventListener('click', function () {
     valor = peli.dataset.valor;
     rutaVideo = ruta[valor];
+    //localStorage.setItem("video", rutaVideo);
     if (valorActual === valor){
       video.innerHTML = "";
       valorActual = null;
