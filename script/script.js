@@ -1,3 +1,5 @@
+  fetch('http://www.omdbapi.com/?apikey=[26603ecb]&')
+
 if (localStorage.getItem("theme")=="true"){
   document.body.classList.add('claro');
 }
